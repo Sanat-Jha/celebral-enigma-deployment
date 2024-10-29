@@ -68,7 +68,7 @@ def addpost(request):
         category.posts.add(post)
 
         try:
-            send_new_blog_post_email(post.title, post.description, f"http://127.0.0.1:8000/post/{title}", [subscriber.email for subscriber in EmailSubs.objects.all()])
+            send_new_blog_post_email(post.title, post.description, f"http://celebral-enigma.onrender.com/post/{title}", [subscriber.email for subscriber in EmailSubs.objects.all()])
         except Exception as e:
             print(f"Error sending email: {e}")
         
