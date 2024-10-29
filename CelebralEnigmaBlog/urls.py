@@ -12,4 +12,5 @@ urlpatterns = [
     path('increaseviewcount/', views.increase_view_count, name='increase_view_count'),
     path('newsubscribe', views.newsubscribe, name='newsubscribe'),
     path('unsubscribe', views.unsubscribe, name='unsubscribe'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
