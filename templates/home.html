@@ -63,21 +63,24 @@
                 </div>
             </aside>
             
-            <section class="blog-posts" id="blog-posts">
+<section class="blog-posts" id="blog-posts">
                 <!-- Loading animation -->
                 <div class="loading-animation"></div>
                 
                 {% for post in posts %}
-                <article class="post-card hidden">
-                    <img src="{% static 'pin.png' %}" class="paper-icon">
-                    <div class="post-content">
-                        <span class="post-date">{{ post.date }}</span>
-                        <h2 class="post-title">{{ post.title }}</h2>
-                        <p class="post-excerpt">{{ post.description }}</p>
-                        <a href="/post/{{ post.title }}" class="read-button">Read More</a>
-                    </div>
-                </article>
-                {% endfor %}
+<article class="post-card hidden">
+    <div class="post-header">
+        <img src="{% static 'pin.png' %}" class="paper-icon">
+        <span class="post-date">{{ post.date }}</span>
+    </div>
+    <div class="post-content">
+        <h2 class="post-title">{{ post.title }}</h2>
+        <p class="post-excerpt">{{ post.description }}</p>
+        <a href="/post/{{ post.title }}" class="read-button">Read More</a>
+    </div>
+</article>
+{% endfor %}
+
             </section>
             
             <aside class="sidebar right-sidebar">

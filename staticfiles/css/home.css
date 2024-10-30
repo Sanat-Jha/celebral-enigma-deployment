@@ -173,7 +173,7 @@ body {
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: 0.5em;
 }
 
 @media screen and (max-width: 768px) {
