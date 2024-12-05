@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'CelebralEnigma.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://celebral_enigma_user:QDwt34tX7tjvQSW8Hr7Uwmgc561393YX@dpg-csgbeedumphs73b2l520-a.singapore-postgres.render.com/celebral_enigma',
+        default='postgresql://celebral_enigma_rfl7_user:TyAdmtfNzxy4F967zA6STgwayFCayJ0L@dpg-ct8vftd2ng1s73dgh1f0-a/celebral_enigma_rfl7',
         conn_max_age=600
     )
 }
